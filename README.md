@@ -88,6 +88,6 @@ v0.0.1
 
 Check to ensure app exited:
 
-echo $?
+```echo $?```
 
 Expected output: 0
