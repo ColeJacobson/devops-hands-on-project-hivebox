@@ -88,6 +88,12 @@ v0.0.1
 
 Check to ensure app exited:
 
-```echo $?```
+```text
+echo $?
+```
 
-Expected output: 0
+Expected output:
+
+```text
+0
+```
