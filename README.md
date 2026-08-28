@@ -61,3 +61,33 @@ HiveBox will be developed using kanban. Work will be reflected as github issues 
 - '5eba5fbad46fb8001b799786'
 - '5c21ff8f919bf8001adf2488'
 - '5ade1acf223bd80019a1011c'
+
+### Phase 2: Application
+
+Initial HiveBox application is version v0.0.1. It prints the current application version and then exits. 
+
+#### Build Docker Image
+
+```shell
+docker build -t hivebox:v0.0.1 .
+```
+
+#### Run Container
+
+```shell
+docker run --rm hivebox:v0.0.1
+```
+
+Expected output:
+
+```text
+v0.0.1
+```
+
+#### Verify the output
+
+Check to ensure app exited:
+
+echo $?
+
+Expected output: 0
