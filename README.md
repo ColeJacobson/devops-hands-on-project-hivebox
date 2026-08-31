@@ -255,3 +255,29 @@ The pipeline:
 5. Builds the Docker image.
 6. Starts the container.
 7. Verifies that `/version` returns `v0.0.1`.
+
+### Phase 4
+
+Phase 4 adds environment variable, temperature status, prometheus, kubernetes and CI/CD.
+
+#### Configuration
+
+HiveBox reads senseBox ID's from env variable
+
+#### Temp Status
+
+- Below 10°C: Too Cold
+- From 10°C through 37°C: Good
+- Above 37°C: Too Hot
+
+#### Prometheus Metrics
+
+/metrics returns default Prometheus metrics about the app
+
+#### Kubernetes
+
+Created KIND config to run with ingress-Nginx and created kubernetes core manifests to deploy the application
+
+#### CI and CD
+
+Code integration tests, sonarqube, and GHCR workflow added. Cloud-provider-kind replacing Terrascan.
